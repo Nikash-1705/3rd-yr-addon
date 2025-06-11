@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 class Person {
     String name;
@@ -159,3 +160,48 @@ public class Main {
 OUTPUT:
 6
 8.75
+-----------------------------------------------------------
+Using Scanner:
+class Sum {
+    int multiply( int a,int b) {
+        return a * b;
+    }
+
+    double multiply(double a1, double b1) {
+         return a1 * b1;
+     }
+
+   
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Sum s1 = new Sum();
+        
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the Value1:");
+        int a=sc.nextInt();
+        System.out.println("Enter the value2:");  
+        int b=sc.nextInt();
+        System.out.println("The Multiplied Integer Values Are:"  + s1.multiply(a,b)); 
+        System.out.println("Enter the Value1:");
+        double a1=sc.nextDouble();
+        System.out.println("Enter the value2:");  
+        double b1=sc.nextDouble();
+        System.out.println("The Multiplied Double Values Are:"  + s1.multiply(a1,b1));
+     sc.close();
+       
+    }
+}
+OUTPUT:
+Enter the Value1:
+
+2
+Enter the value2:
+2
+The Multiplied Integer Values Are:4
+Enter the Value1:
+3
+Enter the value2:
+3.5
+The Multiplied Double Values Are:10.5
