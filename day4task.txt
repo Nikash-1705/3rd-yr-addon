@@ -135,3 +135,27 @@ Average: 71.666664
 Result: Pass
 
 --------------------------------------------------------
+Method OverLoading
+class Sum {
+    int multiply(int a, int b) {
+        return a * b;
+    }
+
+    double multiply(double a, double b) {
+        return a * b;
+    }
+
+   
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Sum s1 = new Sum();
+        System.out.println(s1.multiply(2, 3));          
+        System.out.println(s1.multiply(2.5, 3.5));      
+       
+    }
+}
+OUTPUT:
+6
+8.75
